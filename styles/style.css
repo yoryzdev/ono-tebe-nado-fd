@@ -268,6 +268,7 @@
   list-style: none;
   text-underline-offset: 3px;
   text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
 }
 .footer__menu {
   color: #000;
@@ -282,11 +283,6 @@
 }
 .footer__menu-list-item {
   list-style: none;
-}
-.footer__menu-link {
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-  text-decoration-skip-ink: none;
 }
 .footer__menu-link_active {
   text-decoration: none;
