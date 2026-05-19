@@ -11,16 +11,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu" aria-label="Меню">
-        <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">
-            <a href="#" class="header__link_active">главная</a>
+      <nav class="menu" aria-label="Меню">
+        <ul class="menu__list menu__list--row">
+          <li class="menu__item menu__item--no-bullet">
+            <a href="#" class="menu__link menu__link--active">главная</a>
           </li>
-          <li class="header__links-list-item">
-            <a href="#" class="header__link">посмотреть лоты</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">посмотреть лоты</a>
           </li>
-          <li class="header__links-list-item">
-            <a href="#" class="header__link">об аукционе</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -32,7 +32,7 @@
         />
       </a>
       <address class="address header__address">
-        <ul class="header__address-item-link">
+        <ul class="address__list">
           <li>
             <a href="tel:+99995555555">+9 999 555 5555</a>
           </li>
@@ -66,10 +66,10 @@
       <section class="lots">
         <h2 class="lots__title title">Лоты</h2>
         <ul class="lots__card">
-          <li class="lots__card-box card-movie">
-            <div class="overlay"></div>
+          <li class="lots__card-box">
             <a href="#" class="lots__card-link">
-              <article class="lots__card-content">
+              <article class="lots-card-content card-movie">
+                <div class="overlay"></div>
                 <h3 class="lots__card-header">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -81,10 +81,10 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-box card-book">
-            <div class="overlay"></div>
+          <li class="lots__card-box">
             <a href="#" class="lots__card-link">
-              <article class="lots__card-content">
+              <article class="lots-card-content card-book">
+                <div class="overlay"></div>
                 <h3 class="lots__card-header">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -99,10 +99,10 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-box card-painting">
-            <div class="overlay"></div>
+          <li class="lots__card-box">
             <a href="#" class="lots__card-link">
-              <article class="lots__card-content">
+              <article class="lots-card-content card-painting">
+                <div class="overlay"></div>
                 <h3 class="lots__card-header">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -123,7 +123,7 @@
         <div class="about__logo">
           <img
             class="about__logo-image"
-            src="/images/logo-white.svg"
+            src="images/logo-white.svg"
             alt="Логотип Оно тебе надо"
           />
         </div>
@@ -152,50 +152,50 @@
     </main>
     <footer class="footer">
       <address class="address">
-        <ul class="footer__links-list">
-          <li class="footer__menu-link">
+        <ul class="address__list">
+          <li>
             <a href="tel:+99995555555">+9 999 555 5555</a>
           </li>
-          <li class="footer__menu-link">
+          <li>
             <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="footer__menu-link">
+          <li>
             наб. Принсенграхт 263-265,<br />Амстердам
           </li>
         </ul>
       </address>
-      <nav aria-label="Меню" class="footer__menu">
-        <ul class="footer__menu-list">
-          <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link_active">главная</a>
+      <nav aria-label="Меню" class="menu">
+        <ul class="menu__list menu__list--column ">
+          <li class="menu__item menu__item--no-bullet">
+            <a href="#" class="menu__link menu__link--active">главная</a>
           </li>
-          <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link">посмотреть лоты</a>
+          <li class="menu__item menu__item--no-bullet">
+            <a href="#" class="menu__link">посмотреть лоты</a>
           </li>
-          <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link">об аукционе</a>
+          <li class="menu__item menu__item--no-bullet">
+            <a href="#" class="menu__link">об аукционе</a>
           </li>
         </ul>
       </nav>
       <nav aria-label="Социальные сети">
         <ul class="footer__social-list">
           <li>
-            <a href="#" class="footer__social-link">
-              <img src="/images/yt.svg" 
+            <a href="#" class="footer__social-link" target="_blank">
+              <img src="images/yt.svg" 
               class="footer__social-icon"
               alt="Ютуб" />
             </a>
           </li>
           <li>
-            <a href="#" class="footer__social-link">
-              <img src="/images/vk.svg" 
+            <a href="#" class="footer__social-link" target="_blank">
+              <img src="images/vk.svg" 
               class="footer__social-icon"
               alt="ВКонтакте" />
             </a>
           </li>
           <li>
-            <a href="#" class="footer__social-link">
-              <img src="/images/pinterest.svg" 
+            <a href="#" target="_blank" class="footer__social-link" target="_blank">
+              <img src="images/pinterest.svg" 
               class="footer__social-icon"
               alt="Пинтерест" />
             </a>
